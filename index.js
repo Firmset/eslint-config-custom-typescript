@@ -8,6 +8,7 @@ module.exports = {
   },
   rules: {
     camelcase: 0,
+    indent: ["error", 2],
     "object-curly-spacing": ["error", "always"],
     "class-methods-use-this": 0,
     "consistent-return": 0,
