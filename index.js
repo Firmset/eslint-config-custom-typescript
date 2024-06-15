@@ -9,6 +9,9 @@ module.exports = {
   rules: {
     camelcase: 0,
     indent: ["error", 2],
+    "comma-spacing": ["error", { before: false, after: true }],
+    "space-infix-ops": ["error", { int32Hint: false }],
+    "no-multi-spaces": ["error", { ignoreEOLComments: true }],
     "object-curly-spacing": ["error", "always"],
     "class-methods-use-this": 0,
     "consistent-return": 0,
