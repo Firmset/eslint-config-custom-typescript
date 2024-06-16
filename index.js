@@ -18,6 +18,7 @@ module.exports = {
     "comma-spacing": ["error", { before: false, after: true }],
     "space-infix-ops": ["error", { int32Hint: false }],
     "no-multi-spaces": ["error", { ignoreEOLComments: true }],
+    "space-in-parens": ["error", "never"],
     "object-curly-spacing": ["error", "always"],
     "class-methods-use-this": 0,
     "consistent-return": 0,
