@@ -8,7 +8,13 @@ module.exports = {
   },
   rules: {
     camelcase: 0,
-    indent: ["error", 2],
+    indent: [
+      "error",
+      2,
+      {
+        SwitchCase: 1
+      }
+    ],
     "comma-spacing": ["error", { before: false, after: true }],
     "space-infix-ops": ["error", { int32Hint: false }],
     "no-multi-spaces": ["error", { ignoreEOLComments: true }],
@@ -26,6 +32,12 @@ module.exports = {
     "@typescript-eslint/ban-types": 0,
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/no-namespace": 0,
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        argsIgnorePattern: "^_"
+      }
+    ],
     "no-restricted-imports": 0,
     "no-shadow": 0,
     "no-underscore-dangle": 0,
